@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"icm_20948\startup_stm32f303xc.o"
+"icm_20948\main.o"
+"icm_20948\stm32f3xx_it.o"
+"icm_20948\stm32f3xx_hal_msp.o"
+"icm_20948\stm32f3xx_hal_uart.o"
+"icm_20948\stm32f3xx_hal_uart_ex.o"
+"icm_20948\stm32f3xx_hal.o"
+"icm_20948\stm32f3xx_hal_rcc.o"
+"icm_20948\stm32f3xx_hal_rcc_ex.o"
+"icm_20948\stm32f3xx_hal_gpio.o"
+"icm_20948\stm32f3xx_hal_dma.o"
+"icm_20948\stm32f3xx_hal_cortex.o"
+"icm_20948\stm32f3xx_hal_pwr.o"
+"icm_20948\stm32f3xx_hal_pwr_ex.o"
+"icm_20948\stm32f3xx_hal_flash.o"
+"icm_20948\stm32f3xx_hal_flash_ex.o"
+"icm_20948\stm32f3xx_hal_i2c.o"
+"icm_20948\stm32f3xx_hal_i2c_ex.o"
+"icm_20948\stm32f3xx_hal_exti.o"
+"icm_20948\system_stm32f3xx.o"
+--strict --scatter "ICM_20948\ICM_20948.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ICM_20948.map" -o ICM_20948\ICM_20948.axf
